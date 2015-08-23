@@ -1,0 +1,45 @@
+package OA;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  BaseCom,
+  bdertl;
+
+contains
+  TasksFrm in 'TasksFrm.pas' {FrmTasks},
+  SSfinancialFrm in 'SSfinancialFrm.pas' {FrmSSfinancial},
+  SPTPMRFrm in 'SPTPMRFrm.pas' {FrmSPTPMR},
+  SenderRegisterFrm in 'SenderRegisterFrm.pas' {FrmSenderRegister},
+  LCFMRFrm in 'LCFMRFrm.pas' {FrmLCFMR},
+  RMMSFrm in 'RMMSFrm.pas' {FrmRMMS},
+  LTLFrm in 'LTLFrm.pas' {FrmLTL},
+  ExpressInputFrm in 'ExpressInputFrm.pas' {FrmExpressInput};
+
+end.
